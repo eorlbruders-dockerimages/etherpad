@@ -1,7 +1,7 @@
 FROM node:alpine
 MAINTAINER David Magnus Henriques <eorlbruder@magnus-henriques.de>
 
-RUN apk add --update alpine
+RUN apk add --update git
 RUN mkdir -p /opt/etherpad-lite
 RUN git clone https://github.com/ether/etherpad-lite.git /opt/etherpad-lite
 

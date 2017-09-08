@@ -14,8 +14,8 @@ RUN cp ./settings.json /mnt/settings.json
 RUN rm ./settings.json
 RUN ln -s /mnt/settings.json ./settings.json
 
-RUN apk rm git
-RUN apk rm curl
+RUN apk del git
+RUN apk del curl
 RUN rm -rf /var/cache/apk/*
 
 CMD ["/opt/etherpad-lite/bin/run.sh"]

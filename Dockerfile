@@ -18,4 +18,4 @@ RUN apk del git
 RUN apk del curl
 RUN rm -rf /var/cache/apk/*
 
-CMD ["/opt/etherpad-lite/bin/run.sh"]
+CMD ["/opt/etherpad-lite/bin/run.sh","--root"]
